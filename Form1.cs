@@ -14,7 +14,7 @@ namespace Lab1.Bolovin
     {
         Dictionary<CheckBox, Cell> table = new Dictionary<CheckBox, Cell>();
         decimal day = 0;
-        int money = 100;
+        int money = 10;
         int speed = 0;
 
         public Form1()
@@ -30,7 +30,12 @@ namespace Lab1.Bolovin
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             var cb = (sender as CheckBox);
-            if (cb.Checked) Plant(cb);
+            var state = table[cb].state;
+            if (money > 0)
+                if (cb.Checked) Plant(cb);
+                else Harvest(cb);
+            else if (state == CellState.Planted || state == CellState.Overgrow || state == CellState.Empty)
+                MessageBox.Show("You don't have enough money!");
             else Harvest(cb);
         }
 
@@ -44,6 +49,7 @@ namespace Lab1.Bolovin
             label2.Text = money.ToString() + " dollars";
             day += 0.5M;
         }
+
         private void trackBar1_ValueChanged(object sender, EventArgs e)
         {
             speed = (sender as TrackBar).Value;
@@ -55,7 +61,9 @@ namespace Lab1.Bolovin
         {
             table[cb].Plant();
             UpdateCell(cb);
-            money -= 2;
+            if (money > 1)
+                money -= 2;
+            else MessageBox.Show("You don't have enough money!");
         }
 
         private void Harvest(CheckBox cb)
@@ -99,7 +107,10 @@ namespace Lab1.Bolovin
             switch (table[cb].state)
             {
                 case CellState.Planted:
-                    money -= 2;
+                    if (money < 2)
+                        MessageBox.Show("You don't have enough money!");
+                    else
+                        money -= 2;
                     break;
                 case CellState.Green:
                     break;
@@ -110,7 +121,10 @@ namespace Lab1.Bolovin
                     money += 5;
                     break;
                 case CellState.Overgrow:
-                    money -= 1;
+                    if (money < 1)
+                        MessageBox.Show("You don't have enough money!");
+                    else
+                        money -= 1;
                     break;
             }
         }
