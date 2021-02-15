@@ -1,0 +1,10 @@
+D:\VisualStudioProjects\Lab1.Bolovin\bin\Release\Lab1.Bolovin.exe.config
+D:\VisualStudioProjects\Lab1.Bolovin\bin\Release\Lab1.Bolovin.exe
+D:\VisualStudioProjects\Lab1.Bolovin\bin\Release\Lab1.Bolovin.pdb
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.csprojAssemblyReference.cache
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.Form1.resources
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.Properties.Resources.resources
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.csproj.GenerateResource.cache
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.exe
+D:\VisualStudioProjects\Lab1.Bolovin\obj\Release\Lab1.Bolovin.pdb
