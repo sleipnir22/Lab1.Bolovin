@@ -15,6 +15,7 @@ namespace Lab1.Bolovin
         Dictionary<CheckBox, Cell> table = new Dictionary<CheckBox, Cell>();
         decimal day = 0;
         int money = 100;
+        int speed = 0;
 
         public Form1()
         {
@@ -22,6 +23,8 @@ namespace Lab1.Bolovin
             foreach (CheckBox cb in panel.Controls)
                 table.Add(cb, new Cell());
             label2.Text = money.ToString();
+            speed = trackBar1.Value;
+            label5.Text = trackBar1.Value.ToString();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -40,6 +43,12 @@ namespace Lab1.Bolovin
             label1.Text = day.ToString() + " days";
             label2.Text = money.ToString() + " dollars";
             day += 0.5M;
+        }
+        private void trackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            speed = (sender as TrackBar).Value;
+            label5.Text = speed.ToString();
+            timer1.Interval = 100 / speed;
         }
 
         private void Plant(CheckBox cb)
@@ -105,6 +114,7 @@ namespace Lab1.Bolovin
                     break;
             }
         }
+
     }
 
     enum CellState
@@ -125,7 +135,6 @@ namespace Lab1.Bolovin
         private int prGreen = 70;
         private int prImmature = 100;
         private int prMature = 150;
-
         public void Plant()
         {
             state = CellState.Planted;

@@ -51,7 +51,11 @@ namespace Lab1.Bolovin
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
@@ -79,7 +83,7 @@ namespace Lab1.Bolovin
             this.panel.Controls.Add(this.checkBox12, 3, 2);
             this.panel.Location = new System.Drawing.Point(12, 12);
             this.panel.Name = "panel";
-            this.panel.RowCount = 4;
+            this.panel.RowCount = 5;
             this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -95,9 +99,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox16.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(191, 408);
+            this.checkBox16.Location = new System.Drawing.Point(191, 393);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(182, 130);
+            this.checkBox16.Size = new System.Drawing.Size(182, 124);
             this.checkBox16.TabIndex = 16;
             this.checkBox16.UseVisualStyleBackColor = true;
             this.checkBox16.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -109,9 +113,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox15.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(3, 408);
+            this.checkBox15.Location = new System.Drawing.Point(3, 393);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(182, 130);
+            this.checkBox15.Size = new System.Drawing.Size(182, 124);
             this.checkBox15.TabIndex = 15;
             this.checkBox15.UseVisualStyleBackColor = true;
             this.checkBox15.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -123,9 +127,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox14.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(567, 408);
+            this.checkBox14.Location = new System.Drawing.Point(567, 393);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(184, 130);
+            this.checkBox14.Size = new System.Drawing.Size(184, 124);
             this.checkBox14.TabIndex = 14;
             this.checkBox14.UseVisualStyleBackColor = true;
             this.checkBox14.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -137,9 +141,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox13.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(379, 408);
+            this.checkBox13.Location = new System.Drawing.Point(379, 393);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(182, 130);
+            this.checkBox13.Size = new System.Drawing.Size(182, 124);
             this.checkBox13.TabIndex = 13;
             this.checkBox13.UseVisualStyleBackColor = true;
             this.checkBox13.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -153,7 +157,7 @@ namespace Lab1.Bolovin
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(3, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(182, 129);
+            this.checkBox1.Size = new System.Drawing.Size(182, 124);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -168,7 +172,7 @@ namespace Lab1.Bolovin
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(191, 3);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(182, 129);
+            this.checkBox2.Size = new System.Drawing.Size(182, 124);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -182,7 +186,7 @@ namespace Lab1.Bolovin
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(379, 3);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(182, 129);
+            this.checkBox3.Size = new System.Drawing.Size(182, 124);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -196,7 +200,7 @@ namespace Lab1.Bolovin
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(567, 3);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(184, 129);
+            this.checkBox4.Size = new System.Drawing.Size(184, 124);
             this.checkBox4.TabIndex = 4;
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -208,9 +212,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(3, 138);
+            this.checkBox5.Location = new System.Drawing.Point(3, 133);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(182, 129);
+            this.checkBox5.Size = new System.Drawing.Size(182, 124);
             this.checkBox5.TabIndex = 5;
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -222,9 +226,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(191, 138);
+            this.checkBox6.Location = new System.Drawing.Point(191, 133);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(182, 129);
+            this.checkBox6.Size = new System.Drawing.Size(182, 124);
             this.checkBox6.TabIndex = 6;
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -236,9 +240,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox7.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(379, 138);
+            this.checkBox7.Location = new System.Drawing.Point(379, 133);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(182, 129);
+            this.checkBox7.Size = new System.Drawing.Size(182, 124);
             this.checkBox7.TabIndex = 7;
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -250,9 +254,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox8.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(567, 138);
+            this.checkBox8.Location = new System.Drawing.Point(567, 133);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(184, 129);
+            this.checkBox8.Size = new System.Drawing.Size(184, 124);
             this.checkBox8.TabIndex = 8;
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -264,9 +268,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox9.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(3, 273);
+            this.checkBox9.Location = new System.Drawing.Point(3, 263);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(182, 129);
+            this.checkBox9.Size = new System.Drawing.Size(182, 124);
             this.checkBox9.TabIndex = 9;
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -278,9 +282,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox10.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(191, 273);
+            this.checkBox10.Location = new System.Drawing.Point(191, 263);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(182, 129);
+            this.checkBox10.Size = new System.Drawing.Size(182, 124);
             this.checkBox10.TabIndex = 10;
             this.checkBox10.UseVisualStyleBackColor = true;
             this.checkBox10.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -292,9 +296,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox11.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(379, 273);
+            this.checkBox11.Location = new System.Drawing.Point(379, 263);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(182, 129);
+            this.checkBox11.Size = new System.Drawing.Size(182, 124);
             this.checkBox11.TabIndex = 11;
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -306,9 +310,9 @@ namespace Lab1.Bolovin
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox12.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(567, 273);
+            this.checkBox12.Location = new System.Drawing.Point(567, 263);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(184, 129);
+            this.checkBox12.Size = new System.Drawing.Size(184, 124);
             this.checkBox12.TabIndex = 12;
             this.checkBox12.UseVisualStyleBackColor = true;
             this.checkBox12.Click += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -347,11 +351,45 @@ namespace Lab1.Bolovin
             this.label3.TabIndex = 3;
             this.label3.Text = "Wallet:";
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(82, 559);
+            this.trackBar1.Minimum = 1;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.trackBar1.Size = new System.Drawing.Size(745, 56);
+            this.trackBar1.TabIndex = 4;
+            this.trackBar1.Value = 1;
+            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.Location = new System.Drawing.Point(833, 528);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 25);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Speed:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(853, 565);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 25);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 594);
+            this.ClientSize = new System.Drawing.Size(947, 608);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -361,6 +399,7 @@ namespace Lab1.Bolovin
             this.Text = "Овощная ферма";
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,6 +428,9 @@ namespace Lab1.Bolovin
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
